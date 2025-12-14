@@ -1,0 +1,12 @@
+{
+    "name": "demo_game",
+    "version": "1.0.0",
+    "description": "demo",
+    "type": "CLI",
+    "exe_cmd": [
+        "python",
+        "client.py"
+    ],
+    "min_players": 2,
+    "max_players": 2
+}

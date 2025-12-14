@@ -1,0 +1,12 @@
+{
+    "name": "games/MyGame",
+    "version": "1.0.0",
+    "exe_cmd": [
+        "python",
+        "client.py"
+    ],
+    "min_players": 1,
+    "max_players": 2,
+    "type": "CLI",
+    "description": "A sample game."
+}

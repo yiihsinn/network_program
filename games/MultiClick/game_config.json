@@ -1,0 +1,12 @@
+{
+    "name": "MultiClick",
+    "version": "1.0.0",
+    "description": "多人點擊大戰！支援 2-4 人同場競技。GUI 遊戲，等待室可看到已加入玩家，房主點擊「開始遊戲」後倒數開始。15 秒內瘋狂點擊按鈕，即時排行榜顯示所有玩家分數，最高分者獲勝！",
+    "type": "GUI",
+    "exe_cmd": [
+        "python",
+        "client.py"
+    ],
+    "min_players": 2,
+    "max_players": 4
+}

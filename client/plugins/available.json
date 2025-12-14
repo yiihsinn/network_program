@@ -1,0 +1,9 @@
+[
+    {
+        "id": "room_chat",
+        "name": "房間聊天 Plugin",
+        "description": "在等待房間中與其他玩家即時聊天，討論遊戲策略或閒聊",
+        "version": "1.0.0",
+        "author": "System"
+    }
+]

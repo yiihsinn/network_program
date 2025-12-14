@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Server side - runs on remote, not needed for client
+server/
+
+# Downloads (player should download from server)
+client/downloads/
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Temp
+*.tmp
+*.bak
+
+# Artifacts
+.gemini/
+
+# Test files
+test_*.py
+verify_*.py
+upload_*.py

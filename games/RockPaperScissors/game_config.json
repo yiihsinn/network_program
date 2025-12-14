@@ -1,0 +1,12 @@
+{
+    "name": "RockPaperScissors",
+    "version": "1.0.2",
+    "description": "經典剪刀石頭布對戰遊戲！兩位玩家同時選擇 R(石頭)、P(布) 或 S(剪刀)，採 3 局 2 勝制。石頭剋剪刀、剪刀剋布、布剋石頭。CLI 文字介面，輸入選擇後按 Enter 送出。",
+    "type": "CLI",
+    "exe_cmd": [
+        "python",
+        "client.py"
+    ],
+    "min_players": 2,
+    "max_players": 2
+}
