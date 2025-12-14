@@ -2,10 +2,23 @@
 
 ## 快速開始
 
-執行以下指令啟動客戶端：
-
+### Windows
 ```powershell
 ./store.bat
+```
+
+### macOS / Linux
+```bash
+./store.sh
+```
+
+### 重置資料
+```bash
+# Windows
+./reset_data.bat
+
+# macOS / Linux
+./reset_data.sh
 ```
 
 ## 主選單
