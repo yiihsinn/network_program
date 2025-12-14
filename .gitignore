@@ -4,11 +4,16 @@ __pycache__/
 *.pyo
 *.pyd
 
-# Server side - runs on remote, not needed for client
+# Server side - runs on remote
 server/
 
-# Downloads (player should download from server)
+# Downloads
 client/downloads/
+
+# Dev/Planning docs - not for TA
+implementation_plan.md
+appendix.md
+requirement.md
 
 # IDE
 .vscode/
@@ -28,3 +33,13 @@ client/downloads/
 test_*.py
 verify_*.py
 upload_*.py
+
+# Old scripts (not needed)
+start_developer.bat
+start_developer.sh
+start_player.bat
+start_player.sh
+start_servers.bat
+start_servers.sh
+stop_servers.bat
+stop_servers.sh
