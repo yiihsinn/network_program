@@ -259,7 +259,7 @@ class ClickBattleClient:
                     msg = recv_json(self.sock)
                     if not msg:
                         if self.running:
-                            self.update_status("連線中斷")
+                            self.update_status("遊戲結束")
                         break
                     
                     msg_type = msg.get('type')
