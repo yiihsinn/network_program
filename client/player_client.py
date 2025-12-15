@@ -836,8 +836,8 @@ class PlayerClient:
         
         exe_cmd = cfg.get('exe_cmd', ['python', 'client.py'])
         
-        # Convention: Game receives IP PORT as arguments
-        full_cmd = exe_cmd + [str(ip), str(port)]
+        # Convention: Game receives IP PORT PLAYER_NAME as arguments
+        full_cmd = exe_cmd + [str(ip), str(port), self.user_name]
         
         print(f"Launching: {' '.join(full_cmd)}")
         print(f"Game directory: {game_dir}")

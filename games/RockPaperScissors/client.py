@@ -38,11 +38,12 @@ def recv_json(sock):
 
 def main():
     if len(sys.argv) < 3:
-        print("Usage: python client.py <server_ip> <server_port>")
+        print("Usage: python client.py <server_ip> <server_port> [player_name]")
         return
 
     server_ip = sys.argv[1]
     server_port = int(sys.argv[2])
+    player_name = sys.argv[3] if len(sys.argv) > 3 else "Player"
     
     print("=" * 40)
     print("   剪刀石頭布 - Rock Paper Scissors")
@@ -54,7 +55,9 @@ def main():
     
     try:
         sock.connect((server_ip, server_port))
-        print("已連線！等待遊戲開始...")
+        # Send player name on connect
+        send_json(sock, {"type": "join", "name": player_name})
+        print(f"已連線！玩家: {player_name}，等待遊戲開始...")
         
         running = True
         while running:

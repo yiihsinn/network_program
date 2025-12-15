@@ -40,9 +40,10 @@ def recv_json(sock):
         return None
 
 class ClickBattleClient:
-    def __init__(self, server_ip, server_port):
+    def __init__(self, server_ip, server_port, player_name="Player"):
         self.server_ip = server_ip
         self.server_port = server_port
+        self.player_name = player_name
         self.sock = None
         self.running = True
         self.game_started = False
@@ -326,13 +327,14 @@ class ClickBattleClient:
 
 def main():
     if len(sys.argv) < 3:
-        print("Usage: python client.py <server_ip> <server_port>")
+        print("Usage: python client.py <server_ip> <server_port> [player_name]")
         return
 
     server_ip = sys.argv[1]
     server_port = int(sys.argv[2])
+    player_name = sys.argv[3] if len(sys.argv) > 3 else "Player"
     
-    client = ClickBattleClient(server_ip, server_port)
+    client = ClickBattleClient(server_ip, server_port, player_name)
     client.run()
 
 if __name__ == "__main__":
